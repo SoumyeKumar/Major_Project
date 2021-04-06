@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* cart */
+.small-container{
+    max-width:1080px;
+    margin:auto;
+    padding-left:25px;
+    padding-right:25px;
+}
+.cart-page{
+    margin:80px auto;
+}
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display:flex;
+    flex-wrap:wrap;
+}
+th{
+    text-align:left;
+    padding:5px;
+    color:white;
+    background-color: orangered;
+    font-weight:normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width:40px;
+    height:30px;
+    padding:5px;
+}
+td a{
+    color:orangered;
+    font-size:12px;
+}
+td img{
+    width:80px;
+    height:80px;
+    margin-right:10px;
+}
+.total-price{
+    display:flex;
+    justify-content: flex-end;
+
+}
+.total-price table{
+    border-top: 3px solid orangered;
+    width:100%;
+    max-width:470px;
+}
+td:last-child{
+    text-align:right;
+}
+th:last-child{
+    text-align:right;
+}
+@media only screen and (max-width:600px){
+    .cart-info p{
+        display:none;
+    }
+}
+
+/* footer */
+    
+
+.footer h1{
+    text-align:center;
+    color:white;
+    margin-top:0px;
+    margin-bottom:40px;
+}
+.container{
+    max-width:1170px;
+    /* background-color: red; */
+    margin:auto;
+}
+.row{
+    display:flex;
+    flex-wrap:wrap;
+}
+ul{
+    list-style:none;
+}
+.footer{
+    background-color: orange;
+padding:50px 0;
+}
+.footer-col{
+width:33.33%;
+padding: 0 50px;
+}
+.footer-col h4{
+    font-size:18px;
+    color:black;
+    text-transform: capitalize;
+    margin-bottom:35px;
+    font-weight: 700;
+    position:relative;
+
+}
+.footer-col h4::before{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-10px; 
+    background-color:black;  
+    height:2px;
+    box-sizing: border-box; 
+    width:50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom:10px;
+}
+.footer-col ul li a{
+    font-size:16px;
+    text-transform: capitalize;
+    color:black;
+    text-decoration: none;
+    font-weight:300;
+    display:block;
+    transition:all 0.3s ease;
+    /* color:red; */
+}
+.footer-col ul li a:hover{
+    color:white;
+    padding-left:5px;
+
+}
+/* responsive footer */
+@media(max-width:767px){
+    .footer-col{
+        width:50%;
+        margin-bottom:30px;
+    }
+}
+@media(max-width:574px){
+    .footer-col{
+        width:100%;
+        
+    }
+}
